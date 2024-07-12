@@ -950,6 +950,19 @@ section {
 /*--------------------------------------------------------------
 # About Us Section
 --------------------------------------------------------------*/
+
+#about {
+  background-image: url(../img/landing-headers-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bg-img-about_us_hat {
+  top: 0;
+  left: 0px;
+  width: 100px;
+}
 .content > .sub-heading {
   margin-bottom: 0px;
   text-transform: uppercase;
@@ -968,8 +981,8 @@ section {
   color: var(--color-grey);
 }
 
-.bg-img-about_us {
-  z-index: -1;
+.bg-img-about_us_giraff {
+  z-index: 0;
 }
 
 .about .content ul {
