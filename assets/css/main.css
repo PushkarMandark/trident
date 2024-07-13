@@ -114,11 +114,11 @@ section {
   position: relative;
 }
 .section_destination_header p {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
   padding-bottom: 0;
-  color: var(--color-green);
+  color: var(--color-primary);
   position: relative;
   z-index: 2;
   margin-bottom: 0;
@@ -126,16 +126,21 @@ section {
 }
 
 .section_destination_header h2 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0;
   padding-bottom: 0;
-  color: var(--color-primary);
+  color: var(--color-tertiary);
   position: relative;
   z-index: 2;
-
+  font-family: var(--font-secondary);
   position: relative;
+}
+
+.destinationCardImg {
+  width: 100%;
+  min-height: 270px;
 }
 
 .section-header h2 {
@@ -311,6 +316,14 @@ section {
   padding: 10px 20px;
 }
 
+.btn-gradient_international {
+  background: var(--color-primary);
+  color: var(--color-default);
+  border: none;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
 .btn-white {
   background: white;
   padding: 10px 20px;
@@ -963,6 +976,25 @@ section {
   left: 0px;
   width: 100px;
 }
+@media screen {
+}
+@media (max-width: 640px) {
+  .aboutUs_main_person {
+    display: none;
+  }
+  .aeroplance-img {
+    bottom: 0px;
+    right: 0px;
+    width: 200px;
+  }
+  .camera-img {
+    right: 20px;
+  }
+  .bg-img-about_us_giraff {
+    display: none;
+  }
+}
+
 .content > .sub-heading {
   margin-bottom: 0px;
   text-transform: uppercase;
@@ -983,6 +1015,13 @@ section {
 
 .bg-img-about_us_giraff {
   z-index: 0;
+}
+
+.camera-img {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  right: 0px;
 }
 
 .about .content ul {
@@ -1124,13 +1163,17 @@ section {
 .bg-gradinent {
   background: linear-gradient(60deg, #eba62e9a, #00aef3a4);
 }
+.domesticDestinationSubHeading {
+  text-shadow: 3px 1px rgba(0, 0, 0, 0.299);
+  font-size: 18px;
+}
 
 .domestic_location_section {
   width: 100%;
   min-height: 50vh;
   background-color: rgb(225 225 225);
   background-blend-mode: overlay;
-  background-image: url(../img/bg-domestic-destination.jpg);
+  background-image: url(../img/domestic_destination_bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1157,27 +1200,41 @@ section {
   border-radius: 14px;
 }
 .icon_area_domestic > ul {
-  padding: 5px;
+  padding: 3px;
   margin: 0;
-  border: 3px solid var(--color-primary);
+  border: 3px solid var(--color-tertiary);
   display: flex;
   border-radius: 14px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .icon_area_domestic > ul > li {
   list-style: none;
-  color: var(--color-secondary);
-  margin-left: 12px;
+  color: var(--color-tertiary);
+  margin-left: 8px;
   padding: 0;
 }
 
 .title_area_domestic {
-  background: linear-gradient(60deg, #eba62e, #00aef3a4);
+  background: #f7f2ee;
+  color: var(--color-tertiary);
   position: absolute;
+  border-radius: 0px 10px 10px 0px;
   bottom: 10px;
 }
 .title_area_domestic > p {
   font-size: 2rem;
+  color: var(--color-tertiary);
+}
+.title_area_International {
+  background: #f7f2ee;
+  position: absolute;
+  color: var(--color-tertiary);
+  bottom: 10px;
+  border-radius: 0px 10px 10px 0px;
+}
+.title_area_International > p {
+  font-size: 2rem;
+  color: var(--color-tertiary);
 }
 
 .overlay-img {
@@ -1202,6 +1259,8 @@ section {
 .services .card .card-img {
   overflow: hidden;
   border-radius: 20px;
+  border: 2px solid;
+  border-color: var(--color-secondary);
 }
 
 .services .card .card-img img {
@@ -1229,7 +1288,7 @@ section {
 .services .card p {
   padding: 0 10px;
   margin: 0;
-  color: var(--color-default);
+  /* color: var(--color-default); */
   z-index: 2;
   font-weight: 700;
   font-size: 1.4rem;
@@ -1247,7 +1306,7 @@ section {
   background: linear-gradient(60deg, #eba62e9a, #00aef3a4);
 }
 .txt-international > h2 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -2433,7 +2492,7 @@ section {
 .hero_why {
   width: 100%;
   min-height: 600px;
-  background-color: rgb(239 170 15);
+  background-color: var(--color-secondary);
   background-image: url(../img/hero-bg.png);
   background-size: cover;
   position: relative;
@@ -2479,7 +2538,7 @@ section {
   font-size: 48px;
   text-align: left;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-default);
 }
 
 @media (max-width: 575px) {
@@ -2532,10 +2591,15 @@ section {
   width: 100%;
 }
 
+.halfCameraImg {
+  top: 50;
+  right: 0;
+}
+
 .hero_why .stats-item span {
   font-size: 32px;
   display: block;
-  color: green;
+  color: var(--color-primary);
   font-weight: 700;
   margin-bottom: 15px;
   padding-bottom: 15px;
