@@ -1705,7 +1705,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/bg_testimonial.jpg") no-repeat;
+  background-color: var(--color-tertiary);
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
@@ -1716,7 +1716,7 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(60deg, #bb79079d, #96080a9b);
+  background: var(--color-tertiary);
 }
 .testimonial_heading {
   color: white;

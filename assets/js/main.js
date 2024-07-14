@@ -136,14 +136,15 @@ document.addEventListener("DOMContentLoaded", () => {
   /**
    * Init swiper slider with 1 slide at once in desktop view
    */
-  new Swiper(".slides-1", {
+  const swiper = new Swiper(".slides-1", {
     speed: 600,
     loop: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
     },
-    slidesPerView: "auto",
+    slidesPerView: 3, // Use a single `slidesPerView` setting
+    spaceBetween: 30, // Default space between slides
     pagination: {
       el: ".swiper-pagination",
       type: "bullets",
@@ -152,6 +153,24 @@ document.addEventListener("DOMContentLoaded", () => {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      360: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
     },
   });
 
