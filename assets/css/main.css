@@ -29,7 +29,7 @@
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
-  width: 14px;
+  width: 10px;
   background: var(--color-default);
 }
 
@@ -41,7 +41,7 @@
 ::-webkit-scrollbar-thumb {
   border-radius: 15px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-  background: var(--color-primary-gradient);
+  background: var(--color-tertiary);
 }
 
 /*--------------------------------------------------------------
@@ -289,7 +289,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: var(--color-primary-gradient);
+  background: var(--color-tertiary);
   width: 40px;
   height: 40px;
   border-radius: 4px;
