@@ -1440,8 +1440,8 @@ section {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)),
-    url("../img/bg4.jpg");
+  background: linear-gradient(rgb(210 168 89 / 60%), rgb(28 85 172 / 80%)),
+    url("../img/ourTravekAssociate.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1877,9 +1877,16 @@ section {
   font-weight: bold;
 }
 
+.counter-icon {
+  width: 150px;
+  display: block;
+  text-align: center;
+}
+
 .plus {
-  font-size: 1.2em; /* Adjust the size as needed */
-  color: #000; /* Change color if needed */
+  font-size: 64px;
+  font-weight: bold; /* Adjust the size as needed */
+  color: #ffffff; /* Change color if needed */
 }
 
 /*--------------------------------------------------------------
@@ -2756,6 +2763,17 @@ section {
 .txt-why-heading {
   color: var(--color-primary);
 }
+
+@media (max-width: 575px) {
+  .image-collage-1 {
+    display: none;
+  }
+  .image-collage-2 {
+    max-width: 100px;
+    bottom: 0px;
+  }
+}
+
 .image-collage-1 {
   bottom: 0;
   right: 10px;
