@@ -990,9 +990,17 @@ section {
   .camera-img {
     right: 20px;
   }
+  .aeroplance-img-international {
+    top: -80px;
+    width: 200px;
+  }
   .bg-img-about_us_giraff {
     display: none;
   }
+}
+
+.aeroplance-img-international {
+  top: -80px;
 }
 
 .content > .sub-heading {
@@ -1158,7 +1166,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Domestic location Section
+# Domestic / international location Section
 --------------------------------------------------------------*/
 .bg-gradinent {
   background: linear-gradient(60deg, #eba62e9a, #00aef3a4);
@@ -1174,6 +1182,20 @@ section {
   background-color: rgb(225 225 225);
   background-blend-mode: overlay;
   background-image: url(../img/domestic_destination_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  padding: 120px 0 60px 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+.international_location_section {
+  width: 100%;
+  min-height: 50vh;
+  background-color: rgb(225 225 225);
+  background-blend-mode: overlay;
+  background-image: url(../img/international_location_section.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1305,7 +1327,7 @@ section {
 .bg-gradinent {
   background: linear-gradient(60deg, #eba62e9a, #00aef3a4);
 }
-.txt-international > h2 {
+.txt-handpicked > h2 {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1316,7 +1338,7 @@ section {
   z-index: 2;
   position: relative;
 }
-.txt-international > p {
+.txt-handpicked > p {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1328,13 +1350,13 @@ section {
   position: relative;
 }
 
-.txt-international {
+.txt-handpicked {
   margin-bottom: 20px;
   padding-bottom: 20px;
   color: var(--color-default);
 }
 
-.international_location_section {
+.handpicked_location_section {
   width: 100%;
   background-image: url("../img/bg4.jpg");
   background-color: rgba(0, 0, 0, 0.613);
@@ -1356,12 +1378,12 @@ section {
 /*--------------------------------------------------------------
 # Call To Features Section
 --------------------------------------------------------------*/
-.heading-feature-lotus {
+.heading-feature-trident {
   color: var(--color-primary);
   font-size: 32px;
 }
 
-.heading-feature-lotus::after {
+.heading-feature-trident::after {
   content: "";
   position: absolute;
   display: block;
