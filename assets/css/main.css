@@ -1864,7 +1864,7 @@ section {
   width: 100%;
   min-height: 50vh;
   background-color: #d9d9d9;
-  background-image: url(../img/bg_form.jpg);
+  background-image: url(../img/blogbg.jpg);
   background-blend-mode: overlay;
   background-attachment: fixed;
   background-size: cover;
@@ -2087,7 +2087,7 @@ section {
 }
 
 .horizontal-pricing .featured {
-  background: var(--color-primary-gradient);
+  background: var(--color-tertiary);
 }
 
 .horizontal-pricing .featured h3,
@@ -2102,12 +2102,12 @@ section {
 
 .horizontal-pricing .featured .buy-btn {
   background: var(--color-default);
-  color: var(--color-primary);
+  color: var(--color-tertiary);
   border-color: #fff;
 }
 
 .horizontal-pricing .featured .buy-btn:hover {
-  background: var(--color-green);
+  background: var(--color-tertiary);
   color: var(--color-default);
 }
 
