@@ -976,7 +976,8 @@ section {
   left: 0px;
   width: 100px;
 }
-@media screen {
+.bus-img {
+  top: 50px;
 }
 @media (max-width: 640px) {
   .aboutUs_main_person {
@@ -990,6 +991,10 @@ section {
   .camera-img {
     right: 20px;
   }
+  .bus-img {
+    width: 100px;
+    top: 0px;
+  }
   .aeroplance-img-international {
     top: -80px;
     width: 200px;
@@ -997,6 +1002,14 @@ section {
   .bg-img-about_us_giraff {
     display: none;
   }
+}
+
+.collage-half-img {
+  width: 200px;
+}
+
+.start-fish-img {
+  width: 80px;
 }
 
 .aeroplance-img-international {
@@ -1859,6 +1872,16 @@ section {
   color: var(--color-secondary);
 }
 
+.purecounter {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.plus {
+  font-size: 1.2em; /* Adjust the size as needed */
+  color: #000; /* Change color if needed */
+}
+
 /*--------------------------------------------------------------
 # Our Team Section
 --------------------------------------------------------------*/
@@ -2509,7 +2532,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Why Loctus Section 
+# Why trient Section 
 --------------------------------------------------------------*/
 .hero_why {
   width: 100%;
@@ -2561,6 +2584,75 @@ section {
   text-align: left;
   font-weight: 700;
   color: var(--color-default);
+}
+
+.travelWithUsSufixColor {
+  color: var(--color-tertiary);
+}
+
+.why-cirle-img_card {
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  border: 6px solid #fda720;
+  z-index: 1;
+  padding: 0;
+  overflow: hidden;
+  margin: 0;
+  cursor: pointer;
+  position: relative; /* Ensure correct positioning */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-overlay-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%; /* Ensure the round shape */
+  overflow: hidden; /* Ensure the image doesn't overflow the container */
+}
+
+.why-cirle-img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.image-overlay-container:hover .why-cirle-img {
+  transform: scale(1.1); /* Scale the image slightly on hover */
+}
+
+.image-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.215); /* Semi-transparent black overlay */
+  border-radius: 100%; /* Maintain the round shape */
+  pointer-events: none; /* Ensure the overlay doesn't interfere with interactions */
+  z-index: 2; /* Ensure the overlay is above the image */
+}
+
+.image_overlay_heading {
+  background-color: #ffffffc5;
+  border-color: var(--color-tertiary);
+  border-style: solid;
+  border-width: 4px;
+  padding: 10px 7px;
+  font-weight: bolder;
+  color: var(--color-tertiary);
+  font-size: 24px;
+  border-radius: 13px;
+  position: absolute;
+  z-index: 3; /* Ensure the text is above the overlay */
+  top: 50%; /* Center the text vertically */
+  left: 50%; /* Center the text horizontally */
+  transform: translate(-50%, -50%); /* Adjust the position to be centered */
 }
 
 @media (max-width: 575px) {
@@ -2648,6 +2740,56 @@ section {
   font-size: 15px;
   font-weight: 600;
   color: var(--color-default);
+}
+
+/*--------------------------------------------------------------
+# Why trient Section 
+--------------------------------------------------------------*/
+.stats_section {
+  width: 100%;
+  background-color: var(--color-tertiary);
+  background-size: cover;
+  position: relative;
+  padding: 30px 0;
+  overflow: visible;
+}
+.txt-why-heading {
+  color: var(--color-primary);
+}
+.image-collage-1 {
+  bottom: 0;
+  right: 10px;
+}
+.collage-3-img {
+  width: 300px;
+  top: -50px;
+}
+.image-collage-2 {
+  bottom: -40px;
+  width: 200px;
+  right: 30px;
+}
+.start-dog-img {
+  width: 100px;
+  top: 100px;
+  left: 20px;
+}
+
+.bg-vedio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-collage-1 {
+  width: 200px;
+}
+
+.vedio_hero-text {
+  color: var(--color-grey);
 }
 
 /*--------------------------------------------------------------
