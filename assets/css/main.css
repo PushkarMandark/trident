@@ -1295,7 +1295,8 @@ section {
   background: #f7f2ee;
   color: var(--color-tertiary);
   position: absolute;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 7px;
   bottom: 10px;
 }
 .title_area_domestic > p {
