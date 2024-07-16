@@ -912,6 +912,11 @@ section {
   right: 0px;
   bottom: 0px;
 }
+@media (max-width: 766px) {
+  .bg-img-about_us_plane {
+    display: none;
+  }
+}
 @media (max-width: 640px) {
   .bg-img-about_us_passport {
     max-width: 130px;
@@ -3298,6 +3303,7 @@ section {
   margin: 3em auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 940px;
   grid-auto-rows: 50px;
   grid-auto-flow: dense;
   grid-gap: 12px;
@@ -3364,4 +3370,20 @@ section {
   text-align: center;
   font-style: italic;
   font-family: "Arial", sans-serif;
+}
+
+@media (max-width: 640px) {
+  .container-grider {
+    width: 80vw;
+    margin: 3em auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(84px, 1fr));
+    max-width: 940px;
+    grid-auto-rows: 24px;
+    grid-auto-flow: dense;
+    grid-gap: 12px;
+  }
+  .image-grid-heading {
+    font-size: medium;
+  }
 }
