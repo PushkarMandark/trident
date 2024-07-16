@@ -1869,8 +1869,7 @@ section {
 .book_now_section_bg {
   width: 100%;
   min-height: 50vh;
-  background-color: #d9d9d9;
-  background-image: url(../img/blogbg.jpg);
+  background-color: #fdfdfd;
   background-blend-mode: overlay;
   background-attachment: fixed;
   background-size: cover;
@@ -2864,7 +2863,7 @@ section {
 .footer {
   font-size: 14px;
   background: var(--color-tertiary);
-  padding: 50px 0;
+  padding: 0px;
   color: var(--color-default);
 }
 
@@ -2876,6 +2875,9 @@ section {
 .footer .footer-info .logo img {
   max-height: 70px;
   margin-right: 6px;
+}
+.footer-seprator-img {
+  padding-bottom: 70px;
 }
 
 .footer .footer-info .logo span {
@@ -2971,6 +2973,65 @@ section {
 
 .footer .credits a {
   color: #fff;
+}
+
+.booknow-title h2 {
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  padding-bottom: 0;
+  color: var(--color-default);
+  position: relative;
+  text-align: center;
+  z-index: 2;
+
+  position: relative;
+}
+
+.booknow-title h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--color-default);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.side-img-location {
+  width: 50px;
+  top: 20px;
+  left: 20px;
+}
+.side-img-googles {
+  width: 150px;
+  top: 20px;
+  right: 20px;
+}
+.side-img-rope {
+  width: 150px;
+  top: 220px;
+  right: 0px;
+  z-index: -1;
+}
+.side-img-frame {
+  width: 250px;
+  bottom: -80px;
+  right: 0px;
+  z-index: -1;
+}
+
+@media (max-width: 640px) {
+  .side-img-googles {
+    width: 120px;
+  }
+  .side-img-frame {
+    width: 15f0px;
+  }
 }
 
 /*--------------------------------------------------------------
