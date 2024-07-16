@@ -1921,18 +1921,18 @@ section {
 }
 
 .purecounter {
-  font-size: 64px;
+  font-size: 32px;
   font-weight: bold;
 }
 
 .counter-icon {
-  width: 150px;
+  width: 100px;
   display: block;
   text-align: center;
 }
 
 .plus {
-  font-size: 64px;
+  font-size: 32px;
   font-weight: bold; /* Adjust the size as needed */
   color: #ffffff; /* Change color if needed */
 }
