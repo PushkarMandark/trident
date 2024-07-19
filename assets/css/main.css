@@ -256,7 +256,7 @@ section {
   padding: 0;
   font-size: 16px;
   font-weight: 600;
-  color: var(--color-secondary);
+  color: var(--color-tertiary);
 }
 
 .breadcrumbs ol a {
@@ -3039,7 +3039,7 @@ section {
 --------------------------------------------------------------*/
 .hero-aboutUs {
   width: 100%;
-  min-height: 600px;
+  min-height: 350px;
   background: url(../img/hero-bg.png) center center;
   background-size: cover;
   position: relative;
@@ -3053,11 +3053,7 @@ section {
   right: 0;
   left: 0;
   bottom: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.676),
-    rgba(255, 255, 255, 0.652)
-  );
+  background: linear-gradient(90deg, #ffffff69, #ffffff63);
 }
 
 .aboutus_ratings {
