@@ -3058,12 +3058,14 @@ section {
 
 .aboutus_ratings {
   padding: 80px 0;
+
   background: url(../img/bg-red.jpg) no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
   position: relative;
 }
+
 .aboutus_ratings > div {
   opacity: 1;
 }
