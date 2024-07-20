@@ -3081,53 +3081,171 @@ section {
 --------------------------------------------------------------*/
 .hero_small {
   width: 100%;
-  min-height: 600px;
-  background: url(../img/hero-bg.png) center center;
+  min-height: 350px;
+  background: url(../img/domestic_destination_bg.jpg) center center;
   background-size: cover;
   position: relative;
   padding: 120px 0 60px;
 }
 
-.hero_small h2 {
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.overlay-vedio_small {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: linear-gradient(
-    90deg,
-    rgb(255 255 255 / 20%),
-    rgb(255 255 255 / 38%)
-  );
-}
-
-.domestic-listing {
-  margin: 100px auto;
-}
-
-.domestic_city_title {
-  background: linear-gradient(60deg, #ffffff, #fafafa);
-  position: absolute;
-  bottom: 10px;
-  border-top-right-radius: 24px;
-  border-bottom-right-radius: 24px;
-}
-.domestic_city_title > p {
-  font-size: 1.2rem;
-  padding: 10px;
-  font-weight: bolder;
-  margin: 0;
-}
-
 .breadcrumbs {
   background-color: #f3f6fc;
   padding: 20px 0;
+}
+.sticky-sidebar-filter {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 80px; /* Adjust this value as needed */
+  padding: 10px 20px;
+  overflow-x: auto;
+  max-height: 100vh;
+  background-color: #f8f9fa; /* Light grey background */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px;
+}
+.sticky-sidebar-filter > h3 {
+  font-weight: bold;
+  font-family: var(--font-secondary);
+  font-size: larger;
+}
+
+.domestic-listing {
+  color: var(--color-grey);
+  background: url(../img/landing-headers-background.jpg);
+}
+
+.right-filter-container {
+  max-height: 80vh;
+  /* background-color: #00aef3; */
+}
+
+.left-listing-container {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.right-filter-container_cities {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.custom-controls-stacked > .custom-control > .description {
+  font-size: large;
+}
+.custom-controls-stacked {
+  display: flex;
+  flex-direction: column;
+}
+
+.material-checkbox {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.material-control-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.material-control-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 3px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.material-control-input:checked ~ .material-control-indicator {
+  background-color: var(--color-primary);
+}
+
+.material-control-input:checked ~ .material-control-indicator::after {
+  display: block;
+}
+
+.material-control-indicator::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.description {
+  margin-left: 30px;
+  line-height: 20px;
+  user-select: none;
+}
+
+.content-card-detail {
+  width: 100%;
+  min-height: 200px;
+  border-radius: 10px;
+}
+.left-img-cardContainer {
+  overflow: hidden;
+  border-radius: 4px;
+}
+.right-info-container {
+  margin-left: 20px;
+  padding-right: 10px;
+}
+.right-info-container > h4 {
+  color: var(--color-tertiary);
+  font-weight: bolder;
+  font-size: x-large;
+}
+.card-info-hotelDetail {
+  display: flex;
+  flex: row;
+}
+.card_include_icons {
+  display: flex;
+  font-weight: bold;
+  flex-direction: row;
+  padding-left: 0px;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: var(--color-primary);
+}
+.card_include_icons > ul > li {
+  list-style: none;
+  color: var(--color-tertiary);
+}
+li.list-unstyled > i:before {
+  font-size: 18px;
+}
+i > span {
+  margin-left: 6px;
+  color: var(--color-tertiary);
+  font-weight: bold;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+i > span > b {
+  font-weight: bolder;
+}
+@media (max-width: 640px) {
+  .sticky-sidebar-filter {
+    position: relative;
+    top: 0px;
+  }
+  .card-info-hotelDetail {
+    flex-direction: column;
+  }
 }
 
 /*--------------------------------------------------------------
