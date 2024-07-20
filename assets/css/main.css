@@ -3220,7 +3220,7 @@ section {
 }
 
 .heading-page-red {
-  color: var(--color-primary);
+  color: var(--color-tertiary);
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
@@ -3231,14 +3231,14 @@ section {
 --------------------------------------------------------------*/
 .hero-service {
   width: 100%;
-  min-height: 600px;
-  background: url(../img/productAndService.jpg) center center;
+  min-height: 350px;
+  background: url(../img/ourServicesBanner.png) center center;
   background-size: cover;
   position: relative;
-  background-image: url(../img/productAndService.jpg);
+  background-image: url(../img/ourServicesBanner.png);
 }
 
-.service-overlay {
+/* .service-overlay {
   content: "";
   position: absolute;
   top: 0;
@@ -3247,23 +3247,24 @@ section {
   bottom: 0;
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.676),
-    rgba(255, 255, 255, 0.652)
+    rgba(34, 31, 217, 0.676),
+    rgba(10, 22, 161, 0.652)
   );
-}
+} */
 
 .para-black {
-  color: var(--color-secondary);
-  font-size: 1rem;
+  color: var(--color-grey);
+  font-size: 1.2rem;
+  line-height: 2;
   font-weight: 500;
 }
 
 .highlight_container {
   width: 100%;
   min-height: 50vh;
-  background-color: rgb(83 37 0);
+  background-color: rgb(29 31 60);
   background-blend-mode: overlay;
-  background-image: url(../img/andomanNicobar.jpg);
+  background-image: url(../img/membershipplanBgImg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3287,13 +3288,14 @@ section {
 #  price table 
 --------------------------------------------------------------*/
 .price_table_heading {
-  background: var(--color-primary-gradient);
+  background-color: var(--color-tertiary) !important;
   color: white;
+  font-size: 1.4rem;
   font-weight: 900;
 }
 .price_table_sub_heading {
-  background: var(--color-green);
-  color: white;
+  /* background: #cc8e2b; */
+  color: #282828;
   font-weight: 900;
 }
 
