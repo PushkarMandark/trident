@@ -2259,13 +2259,13 @@ section {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-item + .info-item {
+/* .contact .info-item + .info-item {
   margin-top: 40px;
-}
+} */
 
 .contact .info-item i {
   font-size: 20px;
-  background: var(--color-primary);
+  background: var(--color-tertiary);
   color: #fff;
   width: 44px;
   height: 44px;
@@ -2275,6 +2275,7 @@ section {
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
   margin-right: 15px;
+  margin-bottom: 15px;
 }
 .bg_img_contact {
   position: absolute;
@@ -2290,7 +2291,7 @@ section {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .contact .info-item p {
@@ -2303,6 +2304,13 @@ section {
 .contact .php-email-form {
   width: 100%;
   background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.mainCOntainerContactCards {
+  display: flex;
+  justify-content: center;
 }
 
 .contact .php-email-form .form-group {
@@ -2387,6 +2395,19 @@ section {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.contact-form-LeftContent {
+  color: #000;
+}
+.contact-form-LeftContent > .subHeading {
+  color: var(--color-primary);
+}
+.contact-form-LeftContent > .mainHeading {
+  color: var(--color-tertiary);
+}
+#contact {
+  background: #f7f2ee;
 }
 
 /*--------------------------------------------------------------
@@ -3032,6 +3053,10 @@ section {
 @media (max-width: 640px) {
   .side-img-googles {
     width: 120px;
+  }
+  .mainCOntainerContactCards {
+    flex-wrap: wrap;
+    flex-direction: column;
   }
   .side-img-frame {
     width: 15f0px;
