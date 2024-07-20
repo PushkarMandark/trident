@@ -1869,7 +1869,7 @@ section {
 .book_now_section_bg {
   width: 100%;
   min-height: 50vh;
-  background-color: #fdfdfd;
+  background-color: #f7f2ee;
   background-blend-mode: overlay;
   background-attachment: fixed;
   background-size: cover;
@@ -1991,12 +1991,16 @@ section {
   font-size: 18px;
   margin: 0 2px;
 }
-
+.preFooter {
+  background: #f7f2ee;
+}
 /*--------------------------------------------------------------
 # Blog Section
 --------------------------------------------------------------*/
 .card-title {
-  color: var(--color-primary);
+  color: var(--color-tertiary);
+  font-size: x-large;
+  font-weight: bolder;
 }
 .blog-heading-img {
   width: 200px;
@@ -3131,7 +3135,7 @@ section {
   gap: 10px;
 }
 .custom-controls-stacked > .custom-control > .description {
-  font-size: large;
+  font-size: medium;
 }
 .custom-controls-stacked {
   display: flex;
@@ -3242,6 +3246,7 @@ i > span > b {
   .sticky-sidebar-filter {
     position: relative;
     top: 0px;
+    max-height: 300px;
   }
   .card-info-hotelDetail {
     flex-direction: column;
@@ -3316,7 +3321,7 @@ i > span > b {
 --------------------------------------------------------------*/
 .hero-blogs {
   width: 100%;
-  min-height: 600px;
+  min-height: 350px;
   background: url(../img/blogbg.jpg) center center;
   background-size: cover;
   position: relative;
@@ -3335,6 +3340,11 @@ i > span > b {
     rgba(255, 255, 255, 0.676),
     rgba(255, 255, 255, 0.652)
   );
+}
+
+.blog-div_container {
+  overflow: hidden;
+  height: 200px;
 }
 
 .heading-page-red {
