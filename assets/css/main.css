@@ -3347,6 +3347,10 @@ i > span > b {
   height: 200px;
 }
 
+.blog-detail-BannerImg {
+  max-height: 400px;
+}
+
 .heading-page-red {
   color: var(--color-tertiary);
   font-size: 2.5rem;
@@ -3354,6 +3358,9 @@ i > span > b {
   text-align: center;
 }
 
+.blog-detil-heading {
+  color: var(--color-tertiary);
+}
 /*--------------------------------------------------------------
 # Porducts and Service page css
 --------------------------------------------------------------*/
