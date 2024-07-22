@@ -2355,6 +2355,19 @@ section {
   font-size: 14px;
   color: rgba(14, 29, 52, 0.8);
 }
+.contact_plane_bg_img {
+  position: absolute;
+  top: -80px;
+  left: -20px;
+  width: 200px;
+}
+
+.goAdventure_contact {
+  width: 300px;
+  bottom: -90px;
+  z-index: 2;
+  left: -100px;
+}
 
 .contact .php-email-form {
   width: 100%;
