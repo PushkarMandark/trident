@@ -2328,6 +2328,12 @@ section {
   height: 100%;
   object-fit: cover;
 }
+.bg_img_gallery1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+}
 
 .contact .info-item h4 {
   padding: 0;
