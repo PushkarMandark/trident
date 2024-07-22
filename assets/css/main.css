@@ -1026,6 +1026,19 @@ section {
 .bus-img {
   top: 50px;
 }
+.right_aboutUs_vication {
+  position: absolute;
+  width: 400px;
+  right: 0;
+  top: 0;
+}
+.bottom_aboutUs_vication {
+  margin-top: 200px;
+  width: 350px;
+  bottom: 0;
+  left: 0;
+}
+
 @media (max-width: 640px) {
   .aboutUs_main_person {
     display: none;
