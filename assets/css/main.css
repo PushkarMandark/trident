@@ -29,7 +29,7 @@
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
   background: var(--color-default);
 }
 
@@ -98,6 +98,9 @@ section {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.txt-dark {
+  color: var(--color-tertiary);
 }
 
 .section_destination_header {
@@ -2481,6 +2484,11 @@ section {
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
+
+.singleProperty_div {
+  background: #f7f2ee;
+}
+
 .service-details .services-list {
   padding: 10px 30px;
   border: 1px solid #d3dff3;
@@ -3675,4 +3683,11 @@ i > span > b {
   .image-grid-heading {
     font-size: medium;
   }
+}
+
+.youMayLikeCard {
+  background: #f7f2ee;
+}
+.youmayLikeImg {
+  min-width: 100%;
 }
