@@ -3209,7 +3209,7 @@ section {
   top: 80px; /* Adjust this value as needed */
   padding: 10px 20px;
   overflow-x: auto;
-  max-height: 100vh;
+  max-height: 94vh;
   background-color: #f8f9fa; /* Light grey background */
   border: 1px solid #ddd; /* Light border */
   border-radius: 10px;
