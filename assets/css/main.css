@@ -2564,7 +2564,7 @@ section {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background: url(../img/hero-bg.png) center center;
+  background: url(../img/activity.jpg) center center;
   background-size: cover;
   position: relative;
   padding: 120px 0 60px;
@@ -2614,6 +2614,9 @@ section {
 }
 
 @media (max-width: 575px) {
+  .bg-vedio {
+    display: none;
+  }
   .hero h2 {
     font-size: 42px;
   }
