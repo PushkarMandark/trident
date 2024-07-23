@@ -2364,6 +2364,12 @@ section {
   left: -20px;
   width: 200px;
 }
+.contact_vid_bg_img {
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  width: 200px;
+}
 
 .goAdventure_contact {
   width: 300px;
@@ -3690,4 +3696,63 @@ i > span > b {
 }
 .youmayLikeImg {
   min-width: 100%;
+}
+
+.dashboardInfoCardBody {
+  width: 600px;
+}
+
+.dashboard_profile_img {
+  width: 150px;
+  border: solid black 4px;
+  border-radius: 20px;
+}
+.membershipeIdDashboard {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.tableLeftLabel {
+  min-width: 200px;
+}
+
+.tableRightValue {
+  max-width: 200px;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.styled-table td,
+.styled-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.styled-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.styled-table tr:hover {
+  background-color: #ddd;
+}
+
+.styled-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+}
+
+.tableLeftLabel {
+  font-weight: bold;
+  color: #333;
+}
+
+.tableRightValue {
+  color: #555;
 }
