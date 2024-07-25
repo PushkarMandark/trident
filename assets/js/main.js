@@ -442,7 +442,7 @@ var swiper2 = new Swiper(".mySingleProperty2", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  thumbs: {
-    swiper: swiper,
+  scrollbar: {
+    el: ".swiper-scrollbar",
   },
 });
