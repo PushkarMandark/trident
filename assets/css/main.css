@@ -3484,6 +3484,10 @@ i > span > b {
 .blog-detil-heading {
   color: var(--color-tertiary);
 }
+.blogCardTitle {
+  font-size: 32px;
+  font-weight: bolder;
+}
 /*--------------------------------------------------------------
 # Porducts and Service page css
 --------------------------------------------------------------*/
