@@ -2064,6 +2064,7 @@ section {
 }
 .blogDetail_title {
   font-size: 2rem;
+  font-weight: bolder;
 }
 .blogDetail_paragraph {
   font-size: 1.2rem;
