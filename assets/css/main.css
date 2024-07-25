@@ -885,6 +885,14 @@ section {
   margin-right: 1em;
 }
 
+.handPcikedLocation_txt_div {
+  background: url(../img/handpickedLocation_txt.png);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /*--------------------------------------------------------------
 #  Services Section
 --------------------------------------------------------------*/
