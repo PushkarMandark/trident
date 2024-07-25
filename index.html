@@ -1708,7 +1708,7 @@
         class="horizontal-pricing py-5 book_now_section_bg">
         <div class="container aos-init aos-animate" data-aos="fade-up">
           <div
-            class="row gy-4 pricing-item featured my-5 py-5 aos-init aos-animate rounded position-relative"
+            class="row gy-4 pricing-item featured my-5 py-5 aos-init aos-animate rounded justify-content-center position-relative"
             data-aos="fade-up"
             data-aos-delay="200">
             <div class="booknow-title blog-section_content_div">
@@ -1731,12 +1731,15 @@
               src="./assets/img/memories.png"
               class="position-absolute side-img-frame"
               alt="" />
-            <div class="col-lg-6 align-items-center justify-content-center">
-              <img src="./assets/img/image-siting.png" class="img-fluid img" />
+            <div
+              class="col-lg-6 align-items-center d-flex justify-content-center">
+              <img
+                src="./assets/img/image-siting.png"
+                class="img-fluid img bookNowRightImg" />
             </div>
 
             <div
-              class="col-lg-6 d-flex align-items-center justify-content-center">
+              class="col-lg-6 d-flex align-items-center d-flex justify-content-start">
               <form action="#" method="post" role="form" class="php-email-form">
                 <div class="row">
                   <div class="col-md-6 form-group">
@@ -1765,6 +1768,15 @@
                     name="subject"
                     id="subject"
                     placeholder="Subject"
+                    required="" />
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="ContactNumber"
+                    id="ContactNumber"
+                    placeholder="Contact Number"
                     required="" />
                 </div>
                 <div class="form-group mt-3">

@@ -3120,6 +3120,11 @@ section {
   margin: auto;
 }
 
+.bookNowRightImg {
+  width: 70%;
+  text-align: center;
+}
+
 .side-img-location {
   width: 50px;
   top: 20px;
